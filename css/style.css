@@ -1,0 +1,250 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+font-family: 'Open Sans', sans-serif;
+}
+/* ===============================navbar======================= */
+
+.logo a {
+text-decoration: none;
+color: white;
+font-size: 40px;
+font-weight: bold;
+}
+.logo span{
+    color: #ffc451;
+    font-size: 40px;
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999;
+
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar ul li{
+    padding: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+ul li a:hover{
+    color: #ffc451;
+}
+
+
+/* ===========================home===================== */
+.home{
+height: 100vh;
+width: 100%;
+background-image: url('../images/bgimg.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+/*to make bg fixed */
+background-attachment: fixed;
+
+}
+.layer{
+   
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+  
+}
+.text{
+    color: white;
+    text-align: center;
+    margin: 50px 0px;
+}
+.text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.text h5{
+    font-size: 35px;
+}
+.container{
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+flex-direction: column;
+
+}
+
+.divs-container{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 70%;
+   margin-top: 50px;
+}
+
+.item{
+    height: 150px;
+    width: 160px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.item:hover{
+    border-color: #ffc451;
+}
+.item i{
+    color: #ffc451;
+   font-size: 30px;
+   margin-bottom: 10px;
+}
+.item a{
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    font-size: 25px;
+}
+.item a:hover{
+    color: #ffc451;
+}
+
+
+/* ==============================about======================================= */
+.about-sec{
+    padding: 50px;
+}
+.title{
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    color: #ffc451;
+    position: relative;
+    margin-bottom: 40px;
+}
+.title::after{
+
+    content: '';
+    display: inline-block;
+   right: 10px;
+    top: 10px;
+    height: 2px;
+    background-color:#ffc451;
+    width: 140px;
+
+
+
+}
+.about-container{
+    display: flex;
+}
+
+.about-img img{
+    width: 100%;
+}
+.about-text{
+    padding: 30px;
+}
+.about-text p{
+    margin: 10px 0px ;
+}
+.about-text ul{
+    list-style: none;
+}
+.about-text ul li i{
+    color: #ffc451;
+    margin: 0px 10px;
+}
+
+
+
+
+/* =============================team section========================================== */
+.team-container{
+    display: flex;
+}
+.team-item{
+    padding: 20px;
+}
+.card{
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+   
+}
+
+.card-text{
+    padding: 20px;
+}
+.card-img{
+    position: relative;
+}
+.card-img img{
+    width: 100%;
+}
+.social{
+display: none;
+position: absolute;
+bottom:40px;
+height:100%;
+width: 100%;
+
+justify-content: center;
+align-items: flex-end;
+bottom: 40px;
+transition: all 1s;
+-webkit-transition: all 6s;
+-moz-transition: all 1s;
+-ms-transition: all 1s;
+-o-transition: all 1s;
+}
+.social-item{
+    background-color: rgb(219, 216, 216);
+    padding: 10px;
+    margin: 5px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.social-item i{
+    color: gray;
+    font-size: 25px;
+   
+}
+
+.social-item:hover{
+background-color: #ffc451;
+}
+.card:hover .social{
+    display: flex;
+
+}
